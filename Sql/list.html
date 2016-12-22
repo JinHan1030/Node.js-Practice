@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DrToilet - Weight Date Page</title>
+    </head>
+    <body>
+        <h1>DrToilet - Weight Data</h1>
+        <a href="/insert">INSERT DATA</a>
+        <a href="/sort">SORT DATA</a>
+        <a href="/origin">ORIGIN DATA</a>
+        <hr/>
+        <table width = "100%" border="1">
+            <tr>
+                <th>USER</th>
+                <th>TYPE</th>
+                <th>WEIGHT</th>
+                <th>DATE</th>
+            </tr>
+            <% data.forEach(function (item,index) {
+                %>
+                <tr>
+                    <td><%= item.user %></td>
+                    <td><%= item.type %></td>
+                    <td><%= item.weight %></td>
+                    <td><%= item.date %></td>
+                </tr>
+                <% }); %>
+        </table>
+    </body>
+</html>
