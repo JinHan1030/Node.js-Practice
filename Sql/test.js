@@ -1,4 +1,4 @@
-// 모듈을 추출합니다.
+// 모듈을 추출합니다
 var fs = require('fs');
 var ejs = require('ejs');
 var http = require('http');
